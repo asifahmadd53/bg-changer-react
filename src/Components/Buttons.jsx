@@ -4,8 +4,8 @@ function Buttons() {
     const [color, setColor] = useState('black')
 
   return (
-    <div className='h-screen flex items-center justify-center' style={{backgroundColor: color}}>
-      <div className='bg-white w-[70%]  fixed top-16 rounded-lg'>
+    <div className='h-screen w-full flex items-center justify-center' style={{backgroundColor: color}}>
+      <div className='bg-white w-auto lg:w-[70%] top-16 rounded-lg'>
       <div className='flex items-center justify-evenly'>
         <button onClick={(()=>setColor('green'))} style={{backgroundColor:'green'}} className='p-2 m-2 rounded-md'>Green</button>
         <button  onClick={(()=>setColor('red'))} style={{backgroundColor:'Red'}} className='w-16   p-2 m-2 rounded-md'>Red</button>
